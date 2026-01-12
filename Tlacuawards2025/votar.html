@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TlacuAwards – Votar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="pagina-votar">
+  <div class="foco-extra-1"></div>
+  <div class="foco-extra-2"></div>
+
+  <div class="pagina">
+    <main class="contenido contenido-votar">
+      <a class="volver" href="index.html">← Volver</a>
+
+      <h1 class="titulo titulo-chico">Votación</h1>
+      <h2 id="tituloCategoria" class="subtitulo-votar">Cargando categoría…</h2>
+
+      <div class="marco-playlist" id="marcoPlaylist">
+        <iframe id="playlistIframe" title="Playlist de la categoría" loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <p class="fallback" id="fallbackPlaylist">
+        Si la playlist no carga acá, abrila directo:
+        <a id="playlistLink" href="#" target="_blank" rel="noopener">Abrir playlist</a>
+      </p>
+
+      <div class="marco-form">
+        <iframe id="formIframe" title="Formulario de votación" loading="eager"></iframe>
+      </div>
+
+      <p class="fallback">
+        Si el formulario no carga acá, abrilo directo:
+        <a id="formLink" href="#" target="_blank" rel="noopener">Abrir formulario</a>
+      </p>
+    </main>
+  </div>
+
+  <div class="marco-cine"></div>
+
+  <script src="votar.js"></script>
+</body>
+
+</html>
